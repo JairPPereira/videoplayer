@@ -750,24 +750,572 @@
     decodificação é muito mais difícil do que a codificação. É fácil mexer um ovo,
     mas fazê-lo voltar ao estado original é muito mais difícil.
     </h2>
-<h2></h2>
-<h2></h2>
-<h2></h2>
-<h2></h2>
-<h2></h2>
-<h2></h2>
-<h2></h2>
-<h2></h2>
-<h2></h2>
-<h2></h2>
-<h2></h2>
-<h2></h2>
-<h2></h2>
-<h2></h2>
-<h2></h2>
-<h2></h2>
-<h2></h2>
-<h2></h2>
+<h2>Na década de 1970, Whitfield Diffie e Martin Hellman tiveram a ideia de
+    procurar por um processo matemático que fosse fácil de realizar em um sentido,
+    mas incrivelmente difícil de realizar na direção oposta. Tal processo seria a
+    chave perfeita. Por exemplo, eu poderia ter uma chave em duas etapas. A
+    metade codificadora eu colocaria num diretório público. Assim, qualquer um
+    poderia me enviar mensagens codificadas, mas só eu teria a parte
+    decodificadora da chave. Embora todo mundo soubesse da parte codificadora,
+    ela não teria relação com a parte decodificadora.
+    </h2>
+<h2>Em 1977 Ronald Rivest, Adi Shamir e Leonard Adleman, uma equipe de
+    matemáticos e cientistas de computadores do Instituto de Tecnologia de
+    Massachusetts, perceberam que os números primos eram a base ideal para um
+    processo fácil de codificar/difícil de decodificar. Para fazer a minha própria
+    chave pessoal eu usaria dois enormes números primos, cada um contendo cerca
+    de 80 dígitos, e então multiplicaria um pelo outro de modo a obter um número
+    não primo ainda maior. Para codificar as mensagens tudo o que é necessário é o
+    conhecimento do número não primo, enquanto para decodificar a mensagem é
+    preciso conhecer os dois números primos originais que foram multiplicados,
+    conhecidos como fatores primos. Eu posso agora publicar meu número não
+    primo enorme, a parte codificadora da chave, enquanto mantenho os dois fatores
+    primos, ou seja, a parte decodificadora da mensagem para mim. E o que é
+    importante, embora todo mundo conheça o imenso número não primo, uma
+    dificuldade imensa aguarda quem tentar descobrir os fatores primos.
+    </h2>
+<h2>Usando um exemplo simples, eu poderia apresentar o número 589, que não é
+    primo, para que todos o usassem na codificação de mensagens para mim. Eu
+    manteria em segredo os dois fatores primos de 589, de modo que só eu pudesse
+    decodificar as mensagens. Se outras pessoas pudessem descobrir os dois fatores
+    primos então elas também poderiam ler minhas mensagens, mas mesmo para
+    este número pequeno não fica evidente quais são seus fatores primos. Neste caso
+    seriam necessários apenas alguns minutos num computador doméstico para
+    calcular os fatores primos como sendo 31 e 19 (31 x 19 = 589) e assim minha
+    chave não ficaria segura por muito tempo.
+    </h2>
+<h2>Contudo, na realidade, o número não primo que eu publicaria teria mais de
+    cem dígitos, o que torna a tarefa de encontrar os fatores primos realmente
+    impossível. Mesmo que os computadores mais poderosos do mundo fossem
+    usados para decompor este imenso número não primo (a chave codificadora)
+    em seus dois fatores primos (a chave decodificadora), seriam necessários vários
+    anos para se obter uma resposta. Portanto, para lograr os espiões estrangeiros, eu
+    só tenho que mudar a chave anualmente. Uma vez por ano eu anuncio meu novo
+    número gigante não primo, e todos os que quiserem decodificar minhas
+    mensagens terão que começar a computar os dois fatores primos do início.
+    </h2>
+<h2>Além de encontrar um papel na espionagem, os números primos também
+    aparecem no mundo natural. As cigarras, mais notadamente a Magicicada
+    septendecim, possuem o ciclo de vida mais longo entre os insetos. A vida delas
+    começa embaixo da terra, onde as ninfas sugam pacientemente o suco da raiz
+    das árvores. Então, depois de 17 anos de espera, as cigarras adultas emergem do
+    solo e voam em grande número espalhando-se pelo campo. Depois de algumas
+    semanas elas acasalam, põem seus ovos e morrem.
+    </h2>
+<h2>A pergunta que intrigava os biólogos era: Por que o ciclo de vida da cigarra é
+    tão longo? E será que existe algum significado no fato de o ciclo ser um número
+    primo de anos? Outra espécie, a Magicicada tredecim, forma seus enxames a
+    cada 13 anos, indicam que um ciclo vital que dura um número primo de anos
+    oferece alguma vantagem evolutiva.
+    </h2>
+<h2>Uma teoria sugere que a cigarra tem um parasita com um ciclo de vida
+    igualmente longo, que ela tenta evitar. Se o ciclo de vida do parasita for de,
+    digamos, 2 anos, então a cigarra procura evitar um ciclo vital que seja divisível
+    por 2, de outro modo os ciclos da cigarra e do parasita vão coincidir
+    regularmente. De modo semelhante, se o ciclo de vida do parasita for de 3 anos,
+    então a cigarra procura evitar um ciclo que seja divisível por 3, para que seu
+    aparecimento e o do parasita não voltem a coincidir. No final, para evitar se
+    encontrar com seu parasita, a melhor estratégia para as cigarras seria ter um
+    ciclo de vida longo, durando um número primo de anos. Como nenhum número
+    vai dividir 17, a Magicicada septendecim raramente se encontrará com seu
+    parasita. Se o parasita tiver um ciclo de vida de 2 anos, eles só se encontrarão
+    uma vez a cada 34 anos, e se ele tiver um ciclo mais longo, digamos, de 16 anos,
+    então eles só vão se encontrar uma vez a cada 272 (16 x 17) anos.
+    </h2>
+<h2>De modo a contra-atacar, o parasita só pode ter dois ciclos de vida que vão
+    aumentar a frequência de coincidências – o ciclo anual e o mesmo ciclo de 17
+    anos da cigarra. Contudo, é improvável que o parasita sobreviva se reaparecer
+    durante 17 anos seguidos, porque pelos primeiros 16 anos não vai encontrar
+    cigarras para parasitar. Por outro lado, para alcançar o ciclo de 17 anos, as
+    gerações de parasitas terão que primeiro evoluir para o ciclo de 16 anos. Isto
+    significa que, em algum estágio de sua evolução, a aparição do parasita e da
+    cigarra não coincidiria durante 272 anos! Em ambos os casos o longo ciclo vital
+    da cigarra a protege.
+    </h2>
+<h2>Isso pode explicar por que o suposto parasita nunca foi encontrado. Na corrida
+    para alcançar as cigarras, o parasita provavelmente foi estendendo seu ciclo de
+    vida até atingir a barreira dos 16 anos. Então o aparecimento das duas espécies
+    deixou de coincidir por 272 anos e a ausência de cigarras levou o parasita à
+    extinção. O resultado é uma cigarra com um ciclo de vida de 17 anos que ela não
+    mais necessita, porque seu parasita não existe mais.
+    </h2>
+    <h1>Monsieur Le Blanc
+    </h1>
+<h2>No começo do século XIX o Último Teorema de Fermat já se firmara como o
+    mais famoso problema da teoria dos números. Desde o avanço realizado por
+    Euler não houvera outros progressos, mas uma dramática revelação, feita por
+    uma jovem francesa, iria revigorar a busca pela demonstração perdida. Sophie
+    Germain viveu em uma era de preconceitos e chauvinismo. Para realizar suas
+    pesquisas ela foi obrigada a assumir uma identidade falsa, estudar sob condições
+    terríveis e trabalhar em isolamento intelectual.
+    </h2>
+<h2>Através dos séculos as mulheres foram desencorajadas a estudar matemática,
+    mas apesar da discriminação houve algumas mulheres matemáticas que lutaram
+    contra os preconceitos gravando seus nomes na história da ciência. A primeira
+    mulher a produzir um impacto nesta disciplina foi Theano, no século VI a.C. Ela
+    começou sua carreira como uma das estudantes de Pitágoras e acabou se
+    casando com ele. Pitágoras é conhecido como “o filósofo feminista” porque
+    ativamente encorajou mulheres estudantes. Theano foi uma das 28 irmãs da
+    Irmandade Pitagórica.</h2>
+<h2>Nos séculos seguintes, filósofos como Sócrates e Platão continuariam a
+    convidar mulheres para suas escolas, mas foi somente no século IV que uma
+    mulher fundou sua própria escola de matemática e se tornou muito influente.
+    Hipácia, filha de um professor de matemática da Universidade de Alexandria,
+    ficou famosa por fazer as dissertações mais populares do mundo conhecido e por
+    ser uma grande solucionadora de problemas. Matemáticos que haviam passado
+    meses sendo frustrados por algum problema em especial escreviam para ela
+    pedindo uma solução. E Hipácia raramente desapontava seus admiradores. Ela
+    era obcecada pela matemática e pelo processo de demonstração lógica. Quando
+    lhe perguntavam por que nunca se casara, ela respondia que já era casada com a
+    verdade. E, finalmente, sua devoção à causa da racionalidade causou sua ruína,
+    quando Cirilo, o patriarca de Alexandria, começou a oprimir os filósofos, os
+    cientistas e os matemáticos, a quem chamava de hereges. O historiador Edward
+    Gibbon faz um relato vívido do que aconteceu depois que Cirilo tramou contra
+    Hipácia e instigou as massas contra ela:
+    </h2>
+<h2>Num dia fatal, na estação sagrada de Lent, Hipácia foi arrancada de sua
+    carruagem, teve suas roupas rasgadas e foi arrastada nua para a igreja. Lá
+    foi desumanamente massacrada pelas mãos de Pedro, o Leitor, e sua horda
+    de fanáticos selvagens. A carne foi esfolada de seus ossos com ostras afiadas
+    e seus membros, ainda palpitantes, foram atirados às chamas.
+    </h2>
+<h2>Logo depois da morte de Hipácia, a matemática entrou num período de
+    estagnação e somente depois da Renascença foi que outra mulher escreveu seu
+    nome nos anais da matemática. Maria Agnesi nasceu em Milão em 1718 e,
+    como Hipácia, era filha de um matemático. Ela foi reconhecida como um dos
+    melhores matemáticos da Europa e ficou particularmente famosa por seus
+    tratados sobre as tangentes às curvas. Em italiano as curvas são chamadas
+    versiera, palavra derivada do latim vertere, “virar”, mas essa palavra também é
+    uma abreviação de avversiera, ou “esposa do Diabo”. Uma curva estudada por
+    Agnesi (versiera Agnesi) foi traduzida erradamente para o inglês como “a bruxa
+    Agnesi” e em pouco tempo a própria matemática era chamada pelo mesmo
+    título.
+    </h2>
+<h2>
+    Embora os matemáticos de toda a Europa reconhecessem as habilidades de
+    Agnesi, muitas instituições acadêmicas, em especial a Academia Francesa,
+    continuaram a lhe recusar uma vaga como pesquisadora. A discriminação
+    institucionalizada contra as mulheres continuou até o século XX, quando Emmy
+    Noether, descrita por Einstein como “o mais significante gênio matemático
+    criativo já produzido desde que as mulheres começaram a cursar os estudos
+    superiores”, teve negado seu pedido para dar aulas na Universidade de Göttingen.
+    A maioria do corpo docente argumentou: “Como podemos permitir que uma
+    mulher se torne Privatdozent? Tendo se tornado Privatdozent ela pode se tornar
+    professora e membro do Conselho Universitário... O que os nossos soldados vão
+    pensar quando voltarem para a universidade e descobrirem que devem aprender
+    aos pés de uma mulher?” Seu amigo e mentor David Hilbert respondeu: “Meine
+    Herren, eu não vejo como o sexo de um candidato possa ser um argumento
+    contra sua admissão como Privatdozent. Afinal, o conselho não é uma casa de
+    banhos.”
+    </h2>
+<h2>Depois perguntaram a seu colega Edmund Landau se Noether era de fato uma
+    grande matemática, ao que ele respondeu: “Eu posso testemunhar que ela é um
+    grande matemático, mas se ela é uma mulher eu não posso garantir.”</h2>
+<h2>Além de sofrer discriminação, Noether teve muitas outras coisas em comum
+    com outras mulheres matemáticas através dos séculos, como o fato de que ela
+    também era filha de um professor de matemática. Muitos matemáticos, de
+    ambos os sexos, são de famílias de matemáticos, dando origem a brincadeiras
+    sobre a existência de um gene matemático, mas no caso das mulheres a
+    porcentagem é particularmente alta. A explicação mais provável é que a maioria
+    das mulheres com potencial nunca teve contato com a disciplina ou foi
+    encorajada a estudá-la, enquanto as filhas de professores não podem evitar
+    viverem rodeadas de números. Além disso, Noether, como Hipácia, Agnesi e a
+    maioria das outras matemáticas nunca se casaram, principalmente porque não
+    era socialmente aceitável que as mulheres se dedicassem a essa carreira, e
+    poucos homens estavam preparados a esposar mulheres com um passado tão
+    polêmico. A grande matemática russa Sony a Kovalevsky é uma exceção à regra
+    já que ela arranjou um casamento de conveniência com Vladimir Kovalevsky,
+    um homem que concordou com um relacionamento platônico. Para ambas as
+    partes o casamento permitiu que escapassem de suas famílias e se
+    concentrassem em suas pesquisas. E no caso de Sony a, tornou mais fácil para ela
+    viajar sozinha pela Europa depois que se tornara uma respeitável mulher casada.
+    </h2>
+<h2>De todos os países europeus, a França era o mais preconceituoso quanto a
+    mulheres instruídas, declarando que a matemática era inadequada para as
+    mulheres e além de sua capacidade mental. E embora os salões de Paris tenham
+    dominado o mundo da matemática durante a maior parte dos séculos XVIII e
+    XIX, somente uma mulher conseguiu escapar da prisão imposta pela sociedade
+    francesa firmando-se como uma grande teórica dos números. Sophie Germain
+    revolucionou o estudo do Último Teorema de Fermat e fez uma contribuição
+    ainda maior do que todos os homens que a antecederam.
+    </h2>
+<h2>Sophie Germain nasceu no dia 1
+    o de abril de 1776, filha do negociante
+    Ambroise-François Germain. Fora do trabalho, sua vida foi dominada pelas
+    agitações da Revolução Francesa – o ano em que ela descobriu o amor pelos
+    números foi o mesmo ano da Queda da Bastilha, e seu estudo do cálculo foi
+    obscurecido pelo Reinado do Terror. Seus pais eram financeiramente bemsucedidos mas a família de Sophie não pertencia à aristocraci</h2>
+<h2>Embora as mulheres da classe social de Germain não fossem estimuladas a
+    estudar matemática, elas deveriam ter conhecimento suficiente do assunto para
+    poder debatê-lo, caso o tema aparecesse em uma conversa educada. Para isso
+    havia uma série de livros escritos para ajudar as mulheres a se inteirarem dos
+    últimos avanços na matemática e na ciência. Francesco Algarotti foi o autor de A
+    filosofia de Sir Isaac Newton explicada para as senhoras. Como Algarotti achava
+    que as mulheres estavam interessadas apenas em romance, ele tentou explicar as
+    descobertas de Newton por meio de um diálogo entre uma marquesa e seu
+    namorado. Por exemplo, o homem delineia a lei do inverso do quadrado da
+    distância na atração gravitacional e a marquesa apresenta sua própria
+    interpretação desta lei fundamental da física. “Eu não posso deixar de pensar (...)
+    que esta proporção dos quadrados das distâncias dos lugares (...) seja verdadeira
+    mesmo no amor. Assim, depois de oito dias de ausência, o amor se torna sessenta
+    e quatro vezes menor do que era no primeiro dia.”
+    </h2>
+<h2>Não é de surpreender que este gênero de livro não tenha inspirado o interesse
+    de Sophie Germain pela matemática. O acontecimento que mudou sua vida
+    ocorreu um dia, quando ela estava na biblioteca de seu pai e encontrou A história
+    da matemática de Jean-Étienne Montucla. O capítulo que dominou sua
+    imaginação foi o ensaio do estudioso sobre a vida de Arquimedes. O relato das
+    descobertas de Arquimedes era sem dúvida algo interessante, mas o que a deixou
+    fascinada foi a história de sua morte. Arquimedes passara a vida em Siracusa,
+    estudando matemática em relativa tranquilidade, mas quando se encontrava no
+    fim dos 70 anos a paz foi quebrada pela invasão do exército romano. Diz a lenda
+    que, durante a invasão, Arquimedes estava tão entretido estudando uma figura
+    geométrica desenhada na areia da praia, que deixou de responder a uma
+    pergunta de um soldado romano. E o soldado o matou com uma lança.
+    </h2>
+<h2>Germain concluiu que, se alguém poderia ser tão envolvido por um problema
+    de geometria a ponto de ser morto, então a matemática devia ser o assunto mais
+    interessante do mundo. Ela imediatamente começou a aprender o básico da
+    teoria dos números e do cálculo e logo estava dormindo tarde para estudar os
+    trabalhos de Euler e Newton. Esse súbito interesse em um assunto tão pouco
+    feminino deixou seus pais preocupados. Um amigo da família, o conde
+    Guglielmo Libri-Carrucci dalla Sommaja, relata como o pai de Sophie tomou
+    suas velas e agasalhos e removeu todo o aquecimento de modo a impedi-la de
+    estudar. Alguns anos antes, na Inglaterra, a jovem matemática Mary Somerville
+    também teve suas velas confiscadas pelo pai, que afirmou: “Devemos colocar
+    um fim nisto ou vamos ter que colocar Mary numa camisa de força um dia
+    desses.”</h2>
+<h2>No caso de Germain ela reagiu mantendo um estoque secreto de velas e se
+    enrolando nas roupas de cama. Libri-Carrucci escreveu que as noites de inverno
+    eram tão frias que a tinta congelava dentro do tinteiro, mas Sophie continuava a
+    estudar, apesar de tudo. Ela foi descrita por algumas pessoas como sendo tímida
+    e desajeitada, mas tinha também uma determinação imensa; finalmente seus
+    pais foram vencidos e deram a Sophie o seu apoio. Germain nunca se casou e
+    por toda sua carreira seu pai financiou suas pesquisas. Durante muitos anos
+    Germain continuou a estudar sozinha, já que não havia matemáticos na família
+    que pudessem trazer para ela as últimas ideias e seus professores se recusavam a
+    levá-la a sério.
+    </h2>
+<h2>Então, em 1794, a École Poly technique foi inaugurada em Paris. Ela foi
+    fundada para ser uma academia de elite treinando cientistas e matemáticos para
+    o país. Seria um lugar ideal para Germain desenvolver seu talento matemático a
+    não ser pelo fato de que tratava-se de uma instituição reservada apenas para
+    homens. Sua timidez natural a impedia de enfrentar o corpo de diretores da
+    academia, e, assim, Sophie passou a estudar secretamente na École. Ela assumiu
+    a identidade de um ex-aluno, Monsieur Antoine-August Le Blanc. A
+    administração da academia não sabia que o verdadeiro Monsieur Le Blanc tinha
+    deixado Paris e continuava a imprimir resumos de aulas e problemas para ele.
+    Germain conseguia obter tudo o que era destinado a Le Blanc e a cada semana
+    entregava as respostas dos problemas sob esse pseudônimo.</h2>
+<h2>Tudo correu bem até que dois meses depois o supervisor do curso, JosephLouis Lagrange, não pôde mais ficar indiferente ao talento demonstrado nas
+    respostas de Monsieur Le Blanc. Não só suas soluções eram maravilhosamente
+    engenhosas, como mostravam uma transformação extraordinária em um
+    estudante que anteriormente fora notório por seus péssimos cálculos. Lagrange,
+    que era um dos melhores matemáticos do século XIX, solicitou um encontro
+    com o estudante recuperado e Germain foi forçada e revelar sua verdadeira
+    identidade. Lagrange ficou atônito mas contente ao conhecer a jovem e tornouse imediatamente seu amigo e mentor. Afinal Sophie Germain encontrara um
+    professor que poderia inspirá-la e com o qual ela poderia se abrir a respeito de
+    seus talentos e ambições.
+    </h2>
+<h2>Adquirindo confiança, Germain foi além da solução de problemas para o
+    curso e passou a estudar áreas inexploradas da matemática. E o que é mais
+    importante, ela se interessou pela teoria dos números e acabou conhecendo o
+    Último Teorema de Fermat. Sophie trabalhou no problema durante vários anos e
+    afinal chegou ao ponto em que acreditava ter feito uma descoberta importante.
+    Ela precisava agora debater suas ideias com outro teórico dos números e
+    resolveu ir direto ao topo, consultando o maior teórico dos números de todo o
+    mundo, o matemático alemão Carl Friedrich Gauss.
+    </h2>
+<h2>Gauss é reconhecido como o mais brilhante matemático que já viveu.
+    (Enquanto E. T. Bell se refere a Fermat como “O Príncipe dos Amadores”, ele
+    chama Gauss de “Príncipe dos Matemáticos”.) Germain tinha tomado contato
+    com o trabalho de Gauss ao estudar sua obra-prima Disquisitiones arithmeticae, o
+    tratado mais amplo e importante desde os Elementos de Euclides. O trabalho de
+    Gauss influenciou todas as áreas da matemática, mas estranhamente ele nunca
+    publicou nada sobre o Último Teorema de Fermat. Em uma carta Gauss chega a
+    manifestar seu desprezo pelo problema. Seu amigo, o astrônomo alemão
+    Heinrich Olbers, escrevera para Gauss encorajando-o a disputar o prêmio
+    oferecido pela Academia de Paris pela solução do desafio de Fermat. “Pareceme, caro Gauss, que você devia começar a se ocupar disso.” Duas semanas
+    depois Gauss respondeu: “Fico-lhe muito grato pela notícia referente ao prêmio
+    de Paris. Mas confesso que o Último Teorema de Fermat, como uma proposição
+    isolada, tem muito pouco interesse para mim. Eu poderia facilmente apresentar
+    uma série de proposições semelhantes que ninguém poderia provar ou
+    desmentir.”
+    </h2>
+<h2>Alguns historiadores suspeitam de que Gauss tivesse tentado secretamente e
+    fracassado em conseguir algum progresso na solução do problema. Assim, sua
+    resposta para Olbers seria meramente um caso de despeito intelectual. Não
+    obstante, quando recebeu as cartas de Germain, ele ficou suficientemente
+    impressionado para esquecer sua opinião em relação ao Último Teorema.
+    </h2>
+<h2>Euler publicara 75 anos antes sua demonstração para o caso de n = 3, e desde
+    então os matemáticos vinham tentando demonstrar, sem sucesso, os casos
+    individuais. Germain, contudo, adotara uma nova estratégia, e descreveu para
+    Gauss a chamada abordagem geral para o problema. Em outras palavras, seu
+    objetivo imediato não era provar um caso particular e sim dizer algo sobre
+    muitos casos de uma só vez. Na carta para Gauss, ela delineou um cálculo
+    tomando como base um tipo especial de número primo p de modo que (2p + 1)
+    também fosse primo. A lista de números primos de Germain incluía 5 porque 11
+    (2 x 5 + 1) também é primo, mas não incluía 13, porque 27 (2 x 13 + 1) não é
+    primo.
+    </h2>
+<h2>Germain desenvolveu um argumento elegante para demonstrar que
+    provavelmente não existem soluções para x
+    n + y
+    n = z
+    n para valores de n iguais a
+    esses primos de Germain. Com o “provavelmente” ela queria dizer que era
+    improvável existirem soluções porque se existisse uma solução então x, y e z
+    seriam múltiplos de n e isso colocaria uma séria restrição em qualquer solução.
+    Os colegas examinaram sua lista de primos um por um, tentando provar que x, y
+    ou z poderiam não ser múltiplos de n e acabaram demonstrando que para aqueles
+    valores particulares de n não havia soluções.</h2>
+<h2>Em 1825 o método teve seu primeiro sucesso completo graças a Gustav
+    Lejeune-Dirichlet e Adrien-Marie Legendre, dois matemáticos separados por
+    uma geração. Legendre era um homem na casa dos 70 anos que atravessou todo
+    o período turbulento da Revolução Francesa. Quando ele deixou de apoiar o
+    candidato do governo para o Institut National sua pensão foi cortada, e ao fazer
+    sua contribuição para o Último Teorema de Fermat, Legendre estava
+    desamparado e na pobreza. Por outro lado, Dirichlet era um jovem e ambicioso
+    teórico dos números que acabara de completar 20 anos. Independentemente os
+    dois foram capazes de provar que o caso n = 5 não tinha solução, mas ambos
+    basearam sua prova e seu sucesso no trabalho de Sophie Germain.
+    </h2>
+<h2>Quatorze anos depois a França produziu outro avanço. Gabriel Lamé fez alguns
+    acréscimos engenhosos ao método de Germain e conseguiu a demonstração para
+    o número primo n = 7. Germain tinha mostrado aos teóricos dos números como
+    eliminar todo um conjunto de números primos e agora cabia aos esforços
+    combinados de seus colegas a demonstração do Último Teorema, um caso de
+    cada vez.
+    </h2>
+<h2>O trabalho de Germain no teorema foi sua maior contribuição à matemática,
+    mas inicialmente ela não recebeu nenhum crédito. Quando escreveu para Gauss,
+    Germain ainda estava na faixa dos 20 anos e, embora tivesse conquistado uma
+    reputação em Paris, ela temia que o grande Gauss não a levasse a sério por ser
+    uma mulher. De modo a se proteger, Germain recorreu novamente ao seu
+    pseudônimo, assinando as cartas como Monsieur Le Blanc.
+    </h2>
+<h2>Seu temor e admiração por Gauss é demonstrado em uma das cartas:
+    “Infelizmente a profundidade de meu intelecto não se iguala à voracidade de
+    meu apetite e sinto um certo receio por incomodar um homem de tamanha
+    genialidade quando não tenho nada para merecer sua atenção exceto uma
+    admiração necessariamente compartilhada por todos os seus leitores.” Gauss,
+    sem conhecer a verdadeira identidade de seu correspondente, tentou deixar
+    Germain à vontade dizendo: “Eu fico encantado que a aritmética tenha
+    encontrado em você um amigo tão hábil.”
+    </h2>
+<h2>As contribuições de Germain poderiam ter sido eternamente atribuídas ao
+    misterioso Monsieur Le Blanc, se não fosse pelo imperador Napoleão. Em 1806,
+    Napoleão invadia a Prússia e o exército francês conquistava uma cidade depois
+    da outra. Germain ficou com medo de que o destino de Arquimedes levasse o
+    outro grande herói de sua vida, Gauss. Assim ela enviou uma mensagem ao seu
+    amigo, general Joseph-Marie Pernety, que estava no comando das forças
+    invasoras. Ela lhe pediu que garantisse a segurança de Gauss, e como resultado o
+    general teve um cuidado especial com o matemático alemão, explicando-lhe que
+    ele devia sua vida à mademoiselle Sophie Germain. Gauss ficou grato mas
+    surpreso, pois nunca tinha ouvido falar nessa misteriosa mulher.
+    </h2>
+<h2>O jogo terminara. Na próxima carta a Gauss, Sophie relutantemente revelou
+    sua identidade. Longe de ficar zangado com o engano, Gauss escreveu para ela
+    encantado:</h2>
+<h2>Como descrever minha admiração e espanto ao ver meu estimado
+    correspondente, Monsieur Le Blanc, se transformar na ilustre personagem
+    que dá um exemplo tão brilhante de algo que eu teria achado difícil de
+    acreditar. O gosto pelas ciências abstratas em geral, e acima de tudo pelos
+    mistérios dos números, é tão raro que a admiração nunca é imediata. O
+    charme desta ciência sublime se revela apenas para aqueles que possuem a
+    coragem para nela mergulhar profundamente. Mas quando uma pessoa de
+    seu sexo, que de acordo com nossos costumes e preconceitos, deveria
+    encontrar dificuldades infinitamente maiores para se familiarizar com estas
+    pesquisas espinhosas, consegue superar os obstáculos e penetrar nas partes
+    mais obscuras, então ela deve, sem dúvida, possuir uma nobre coragem,
+    talentos extraordinários e gênio superior. De fato, nada seria para mim tão
+    lisonjeiro e menos equivocado do que saber que as atrações desta ciência,
+    que enriqueceu minha vida com tantas alegrias, não são quimeras, e se
+    igualam na predileção com que a tem honrado.
+    </h2>
+<h2>A correspondência de Sophie Germain com Carl Gauss inspirou muito de seu
+    trabalho, mas em 1808 o relacionamento terminou bruscamente. Gauss foi
+    nomeado professor de astronomia na Universidade de Göttingen e seus interesses
+    se transferiram da teoria dos números para a matemática aplicada. Ele não mais
+    se deu o trabalho de responder as cartas de Germain. Sem seu mentor, a
+    confiança dela começou a diminuir e um ano depois Sophie abandonou a
+    matemática pura.</h2>
+<h2>Ela iniciou uma carreira frutífera na física, uma disciplina em que novamente
+    se destacaria apenas para enfrentar os preconceitos da sociedade. Sua
+    contribuição mais importante foi a “Memória sobre as vibrações de placas
+    elásticas”, um trabalho brilhante que estabeleceu as fundações para a moderna
+    teoria da elasticidade. Como resultado de sua pesquisa e de seu trabalho no
+    Último Teorema de Fermat, ela recebeu uma medalha do Institut de France e se
+    tornou a primeira mulher, que não fosse esposa de um membro, a assistir às
+    palestras da Academia de Ciências. No fim de sua vida, Sophie retomou sua
+    amizade com Carl Gauss. Ele convenceu a Universidade de Göttingen a
+    conceder a ela um grau honorário. Tragicamente, antes que a universidade
+    pudesse lhe dar essa honra, Sophie Germain morreu de câncer no seio.
+    </h2>
+<h2>Considerando-se tudo, provavelmente ela foi a maior intelectual que a
+    França já produziu. E no entanto, estranho como pareça, quando o
+    funcionário do governo redigiu o atestado de óbito desta eminente associada
+    e colega de trabalho dos mais ilustres membros da Academia Francesa de
+    Ciências, ele a classificou como rentière-annuitant (mulher solteira sem
+    profissão) – não como mathématicienne. E isto não é tudo. Quando a Torre
+    Eiffel foi erguida, uma obra onde os engenheiros precisaram dar uma
+    atenção especial à elasticidade dos materiais usados, os nomes de 72 sábios
+    foram gravados na estrutura. Mas ninguém encontrará nesta lista o nome
+    desta mulher genial, cujas pesquisas contribuíram tanto para a teoria da
+    elasticidade dos metais: Sophie Germain. Teria ela sido excluída da lista pelo
+    mesmo motivo que tornou Agnesi inelegível para a Academia Francesa –
+    porque era mulher? Parece que sim. Se foi este o caso maior é a vergonha
+    sobre aqueles responsáveis por tamanha ingratidão para com alguém que
+    serviu tão bem a causa da ciência. Alguém cujas realizações lhe garantem
+    um lugar invejável na galeria da fama.
+    </h2>
+<h2>H. J. Mozans, 1913
+</h2>
+<h1>Os envelopes lacrados</h1>
+<h2>Depois da descoberta de Sophie Germain, a Academia Francesa de Ciências
+    ofereceu uma série de prêmios, incluindo uma medalha de ouro e três mil
+    francos, ao matemático que pudesse finalmente terminar com o mistério do
+    Último Teorema de Fermat. Além do prestígio de demonstrar o Último Teorema,
+    havia agora uma recompensa valiosa ligada ao desafio. Os salões de Paris
+    ficaram cheios de boatos sobre quem estava adotando qual estratégia e o quão
+    perto estariam de anunciar um resultado. Então, no dia 1º de março de 1847, a
+    Academia teve a reunião mais dramática de sua história.
+    </h2>
+<h2>A ata descreve como Gabriel Lamé, que tinha demonstrado o caso de n = 7
+    alguns anos antes, subiu ao pódio diante dos mais importantes matemáticos de sua
+    época e anunciou que estava muito perto de demonstrar o Último Teorema de
+    Fermat. Ele admitiu que sua prova ainda estava incompleta, mas delineou o
+    método e previu que dentro das próximas semanas publicaria a demonstração
+    completa no jornal da Academia.
+    </h2>
+<h2>Toda a audiência ficou perplexa, mas assim que Lamé desceu do pódio
+    Augustin Louis Cauchy, outro dos melhores matemáticos de Paris, pediu a
+    palavra. Cauchy anunciou para a Academia que estivera trabalhando numa
+    abordagem semelhante à de Lamé, e que também estava a ponto de publicar
+    uma demonstração completa.
+    </h2>
+<h2>Ambos, Cauchy e Lamé, percebiam que a questão do tempo se tornara
+    crucial. Aquele que publicasse a demonstração completa primeiro receberia o
+    prêmio mais valioso e de maior prestígio na matemática. Embora nenhum dos
+    dois tivesse a prova completa, os dois rivais estavam ansiosos por reivindicar o
+    direito da descoberta. Assim, apenas três semanas depois do anúncio, eles
+    depositaram envelopes lacrados no cofre da Academia. Esta era uma prática
+    comum naquela época, que permitia aos matemáticos fazerem um registro sem
+    revelar os detalhes exatos de seu trabalho. Se mais tarde surgisse uma disputa
+    quanto à originalidade das ideias, os envelopes lacrados forneceriam a evidência
+    necessária para estabelecer a prioridade.
+    </h2>
+<h2>A expectativa aumentou em abril, quando Cauchy e Lamé publicaram
+    detalhes vagos mas fascinantes de suas demonstrações no jornal da Academia.
+    Embora toda a comunidade matemática estivesse desesperada para ver a
+    demonstração completa, muitos torciam para que fosse Lamé e não Cauchy o
+    vencedor da corrida. Todos conheciam Cauchy como um hipócrita, fanático
+    religioso e pessoa extremamente impopular com os colegas. Ele só era tolerado
+    na academia por seu talento.</h2>
+<h2>Então, no dia 24 de maio, foi feito um anúncio que acabou com todas as
+    especulações. Mas não foi nem Cauchy nem Lamé quem se dirigiu à Academia
+    e sim Joseph Liouville. Liouville chocou sua audiência ao ler o conteúdo de uma
+    carta do matemático alemão Ernst Kummer.
+    </h2>
+<h2>Kummer era um dos melhores teóricos dos números de todo o mundo, todavia,
+    durante boa parte da carreira, seu talento foi prejudicado por um patriotismo
+    exacerbado e um ódio contra Napoleão. Quando Kummer era criança o exército
+    francês invadiu sua cidade natal, Sorau. Os franceses trouxeram com eles uma
+    epidemia de tifo. O pai de Kummer era o médico da cidade e em poucas
+    semanas foi morto pela doença. Traumatizado pela experiência, Kummer jurou
+    que faria tudo ao seu alcance para defender seu país de novos ataques. Assim
+    que completou a universidade, ele aplicou todo o seu intelecto ao problema da
+    determinação da trajetória das balas de canhão. Acabou lecionando as leis da
+    balística no colégio militar de Berlim</h2>
+<h2>Junto com a carreira militar, Kummer se dedicou ativamente à pesquisa da
+    matemática pura e estava ciente da disputa que ocorria na Academia Francesa.
+    Ele tinha lido os anais e analisado os poucos detalhes que Cauchy e Lamé tinham
+    se atrevido a revelar. Para Kummer ficou óbvio que os dois franceses estavam se
+    encaminhando para o mesmo beco sem saída da lógica. Ele delineou seu ponto
+    de vista na carta que enviara a Liouville.
+    </h2>
+<h2>De acordo com Kummer, o problema fundamental era que as demonstrações
+    de Cauchy e Lamé dependiam do uso de uma propriedade dos números
+    conhecida como fatoração única. A fatoração única diz que só existe uma
+    combinação de números primos que, ao serem multiplicados, produzirão
+    determinado número. Por exemplo, a única combinação de primos que produz o
+    número 18 é a seguinte:</h2>
+<h2>18 = 2 x 3 x 39
+</h2>
+<h2>Do mesmo modo, os números seguintes são unicamente fatorados dos seguintes
+    modos:
+    </h2>
+<h2>35 = 5 x 7
+    180 = 2 x 2 x 3 x 3 x 5
+    106.260
+    =
+    2 x 2 x 3 x 5 x 7 x 11 x
+    23</h2>
+<h2>A fatoração única foi descoberta no século IV a.C., por Euclides. Ele provou que
+    ela era verdade para todos os números naturais e descreveu a demonstração no
+    Livro IX dos seus Elementos. O fato de que a fatoração única é verdadeira para
+    todos os números naturais é um elemento vital de muitas outras demonstrações e
+    hoje é chamada de teorema fundamental da aritmética.</h2>
+<h2>À primeira vista pode parecer não existir motivo para Cauchy e Lamé não
+    usarem a fatoração única, como centenas de matemáticos já tinham feito antes
+    deles. Infelizmente, ambas as demonstrações envolviam números imaginários. E
+    embora a fatoração única seja verdadeira para os números reais, ela pode se
+    tornar falsa quando introduzimos os números imaginários, lembrava Kummer. E
+    em sua opinião esta era uma falha fatal.</h2>
+<h2>Por exemplo, se nos restringirmos aos números reais, então o número 12 pode
+    ser fatorado apenas como 2 x 2 x 3. Contudo, se permitirmos a entrada de
+    números imaginários nessa demonstração, então 12 também pode ser fatorado
+    do seguinte modo:
+    </h2>
+<h2>é um número complexo, uma combinação de um
+    número real com um número imaginário. E embora o processo de multiplicação
+    seja mais complicado do que para os números comuns, a existência dos números
+    complexos leva a modos adicionais de se fatorar 12. Outro modo é
+    </h2>
+<h2>Não existe mais fatoração
+    única e sim uma escolha de fatorações.
+    </h2>
+<h2>Não existe mais fatoração
+    única e sim uma escolha de fatorações.
+    </h2>
+<h2>Esta perda da fatoração única colocou as provas de Cauchy e Lamé em perigo
+    grave, mas não as destruiu completamente. As demonstrações deveriam mostrar
+    que não existem soluções para a equação x
+    n + y
+    n = z
+    n, onde n representa um
+    número maior do que 2. Como foi mostrado no início deste capítulo, a
+    demonstração só precisava funcionar para valores primos de n. Por exemplo, o
+    problema da fatoração única poderia ser evitado para todos os números primos
+    até, e inclusive, n = 31. Contudo, o número primo n = 37 não pode ser vencido de
+    modo tão fácil. E entre os números primos menores do que 100, dois outros, n =
+    59 e 67, são também casos problemáticos. Estes assim chamados primos
+    irregulares estão espalhados entre os números primos restantes e eram agora os
+    obstáculos contra a demonstração.
+    </h2>
+<h2>Kummer chamou a atenção para o fato de que nenhuma matemática
+    conhecida poderia abordar todos os primos irregulares de uma só vez. Contudo,
+    ele acreditava que, por meio de técnicas cuidadosamente elaboradas para cada
+    primo irregular, cada caso poderia ser resolvido individualmente. Mas o
+    desenvolvimento dessas técnicas seria um exercício lento e penoso. Pior ainda, o
+    número de primos irregulares continua sendo infinito. Lidar com eles
+    individualmente ocuparia todos os matemáticos do mundo pelo resto da
+    eternidade.
+    </h2>
+<h2>A carta de Kummer teve um efeito arrasador sobre Lamé. Na melhor das
+    hipóteses, a suposição da fatoração única tinha sido excesso de otimismo e, na
+    pior das hipóteses, uma tolice. Lamé percebeu que se tivesse sido mais aberto
+    com seu trabalho o erro teria sido detectado mais cedo. Ele escreveu para seu
+    amigo Dirichlet em Berlim: “Se ao menos você tivesse estado em Paris, ou eu
+    estivesse em Berlim, tudo isto não teria acontecido.”
+    </h2>
+<h2>Enquanto Lamé se sentia humilhado, Cauchy se recusava a aceitar a derrota.
+    Ele achava que, comparada com a demonstração de Lamé, a sua abordagem
+    dependia menos de fatoração única. Até que a análise de Kummer tivesse sido
+    completamente verificada, havia a possibilidade de que estivesse errada. Por
+    várias semanas ele continuou a publicar artigos sobre o assunto, até que, pelo fim
+    do verão, ele também se calou.</h2>
 <h2></h2>
 <h2></h2>
 <h2></h2>
